@@ -5,8 +5,12 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	overflow: hidden;
+}
 
 body {
+	position: relative;
 	background: #06688F;
 	color: #fafafa;
 	display: flex;
