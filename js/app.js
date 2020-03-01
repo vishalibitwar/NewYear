@@ -1,5 +1,5 @@
 const body = document.body;
-const endTime = new Date('December 31 2019 23:59:59');
+const endTime = new Date('December 31 2020 23:59:59');
 const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
@@ -19,9 +19,9 @@ function changeBG() {
 
 function animateInnerText() {
   if (newYear === 1)
-    return `Happy New Year 2020`;
+    return `Happy New Year 2021`;
   else
-    return `2020`;
+    return `2021`;
 }
 
 
@@ -43,7 +43,7 @@ function createAnimateEl() {
 }
 
 function showMessage() {  
-  msg = 'Happy New Year 2020';
+  msg = 'Happy New Year 2021';
   let call = setInterval(callMessage, 100);
   let index = 0;
   function callMessage() {
@@ -57,6 +57,7 @@ function showMessage() {
 function updateCountdown() {
   const startTime = new Date();
   const diff = endTime - startTime;
+  
 
   if (diff < 0) {
     newYear = 1;
